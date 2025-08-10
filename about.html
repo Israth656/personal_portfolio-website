@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light page-animate">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <span class="brand">Portfolio</span>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- Dark mode toggle -->
+            <div class="toggle-container">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Dark Mode</span>
+            </div>
+        </div>
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" class="mobile-menu-btn">
+            <span class="menu-icon">&#9776;</span>
+        </button>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="toggle-container">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="mobile-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Dark Mode</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-desc">
+                I'm a passionate developer with a love for crafting clean and efficient code. I enjoy creating 
+                beautiful web designs, experimenting with coding ideas, and continuously improving my skills.
+            </p>
+            <div class="center">
+                <a href="contact.html" class="btn btn-primary">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container animate-on-scroll">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <!-- Web Development -->
+                <div class="skill-card">
+                    <h3 class="skill-title">Web Development</h3>
+                    <div class="skill-icons">
+                        <div class="icon-item skill-item">
+                            <img src="html5.svg" alt="HTML" class="icon-img" />
+                            <p class="icon-label">HTML</p>
+                        </div>
+                        <div class="icon-item skill-item">
+                            <img src="css3.svg" alt="CSS" class="icon-img" />
+                            <p class="icon-label">CSS</p>
+                        </div>
+                        <div class="icon-item skill-item">
+                            <img src="javascript.svg" alt="JavaScript" class="icon-img" />
+                            <p class="icon-label">JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Programming & Languages -->
+                <div class="skill-card">
+                    <h3 class="skill-title">Programming & Languages</h3>
+                    <div class="skill-icons">
+                        <div class="icon-item skill-item">
+                            <img src="python.svg" alt="Python" class="icon-img" />
+                            <p class="icon-label">Python</p>
+                        </div>
+                        <div class="icon-item skill-item">
+                            <img src="java.svg" alt="Java" class="icon-img" />
+                            <p class="icon-label">Java</p>
+                        </div>
+                        <div class="icon-item skill-item">
+                            <img src="mongodb.svg" alt="MongoDB" class="icon-img" />
+                            <p class="icon-label">MongoDB</p>
+                        </div>
+                        <div class="icon-item skill-item">
+                            <img src="R.svg" alt="R" class="icon-img" />
+                            <p class="icon-label">R</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-card">
+                    <h3 class="skill-title">Tools</h3>
+                    <div class="skill-icons">
+                    
+                        <div class="icon-item skill-item">
+                            <img src="git.svg" alt="Git" class="icon-img" />
+                            <p class="icon-label">Git</p>
+                        </div>
+                        <div class="icon-item skill-item">
+                            <img src="adobe photoshop.svg" alt="Photoshop" class="icon-img" />
+                            <p class="icon-label">Photoshop</p>
+                        </div>
+                        <div class="icon-item skill-item">
+                            <img src="vscode.svg" alt="VS Code" class="icon-img" />
+                            <p class="icon-label">VS Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Made by ISRATH with ❤️. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to top button -->
+    <button id="scroll-to-top" class="scroll-top-btn">
+        <svg class="scroll-top-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>

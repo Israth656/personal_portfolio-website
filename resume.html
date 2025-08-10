@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light page-animate">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <span class="brand">Portfolio</span>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="toggle-container">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Dark Mode</span>
+            </div>
+        </div>
+        <button id="mobile-menu-button" class="mobile-menu-btn">
+            <span class="menu-icon">&#9776;</span>
+        </button>
+        <div id="mobile-menu" class="mobile-menu">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="toggle-container">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="mobile-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Dark Mode</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section resume-section">
+        <div class="container resume-container">
+            <h2 class="section-title">My Resume</h2>
+            <div class="resume-flex">
+                <div class="resume-sidebar">
+                    <div class="resume-profile">
+                        <!-- <img src="https://placehold.co/300x300" alt="Professional headshot" class="resume-photo" /> -->
+                        <h3 class="resume-name">Israth Begum</h3>
+                        <p class="resume-role">Web Developer</p>
+                        <div class="resume-contact">
+                            <div class="resume-contact-item">
+                                <span class="resume-contact-label">Phone</span>
+                                <span class="resume-contact-value">(91)1234567891</span>
+                            </div>
+                            <div class="resume-contact-item">
+                                <span class="resume-contact-label">Email</span>
+                                <span class="resume-contact-value">israth@example.com</span>
+                            </div>
+                            <div class="resume-contact-item">
+                                <span class="resume-contact-label">Location</span>
+                                <span class="resume-contact-value">Coimbatore</span>
+                            </div>
+                        </div>
+                        <div class="resume-cv">
+                            <a href="Israth_resume.pdf" target="_blank" class="btn btn-primary resume-cv-btn">
+                                View CV
+                            </a>
+                             <a href="Israth_resume.pdf" download class="btn btn-primary resume-cv-btn" style="margin-top:12px;">
+                               Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-main">
+                    <div class="resume-block">
+                        <h3 class="resume-block-title">Career Objective</h3>
+                        <p>
+                            A passionate and detail-oriented technology enthusiast dedicated to creating efficient, visually appealing, and user-friendly web solutions. Skilled in designing and developing responsive websites, implementing innovative ideas, and solving problems through creative coding. Seeking opportunities to contribute technical expertise and creativity toward impactful digital projects that drive growth and enhance user experience.
+                        </p>
+                    </div>
+                    <div class="resume-block">
+                        <h3 class="resume-block-title">Education</h3>
+                        <div class="resume-edu-list">
+                            <div class="resume-edu-item">
+                                <div>
+                                    <h4 class="resume-edu-degree">Master of Science in Computer Science</h4>
+                                    <p class="resume-edu-school">KG College of Arts and Science</p>
+                                </div>
+                                <span class="resume-edu-year">2024 - Present</span>
+                            </div>
+                            <div class="resume-edu-item">
+                                <div>
+                                    <h4 class="resume-edu-degree">Bachelor of Science in Computer Science</h4>
+                                    <p class="resume-edu-school">KG College of Arts and Science</p>
+                                </div>
+                                <span class="resume-edu-year">2021 - 2024</span>
+                            </div>
+                            <div class="resume-edu-item">
+                                <div>
+                                    <h4 class="resume-edu-degree">Higher Secondary Certificate</h4>
+                                    <p class="resume-edu-school">SRT Universal Matriculation Higher Secondary School</p>
+                                </div>
+                                <span class="resume-edu-year">2020 - 2021</span>
+                            </div>
+                            <div class="resume-edu-item">
+                                <div>
+                                    <h4 class="resume-edu-degree">Secondary School Leaving Certificate</h4>
+                                    <p class="resume-edu-school">ST.Joseph's Matriculation School</p>
+                                </div>
+                                <span class="resume-edu-year">2019 - 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Made by ISRATH with ❤️. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to top button -->
+    <button id="scroll-to-top" class="scroll-top-btn">
+        <svg class="scroll-top-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
