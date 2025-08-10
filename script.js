@@ -20,11 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('page-show');
 
     // ===== MOBILE MENU TOGGLE =====
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
+   const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     if (mobileMenuButton && mobileMenu) {
         mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('open');
+            mobileMenu.classList.toggle('active');
+        });
+        // Close mobile menu when a nav-link is clicked
+        mobileMenu.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
         });
     }
 
