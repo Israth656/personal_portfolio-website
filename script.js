@@ -16,11 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (desktopToggle) desktopToggle.addEventListener('change', () => toggleDarkMode(desktopToggle.checked));
     if (mobileToggle) mobileToggle.addEventListener('change', () => toggleDarkMode(mobileToggle.checked));
 
+
+    // Show button when scrolled down, hide when at top
+window.addEventListener('scroll', function() {
+    const btn = document.getElementById('scroll-to-top');
+    if (window.scrollY > 200) {
+        btn.classList.add('show');
+    } else {
+        btn.classList.remove('show');
+    }
+});
+
+// Scroll to top when button is clicked
+document.getElementById('scroll-to-top').onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
     // Animate entire page on load
     document.body.classList.add('page-show');
 
     // ===== MOBILE MENU TOGGLE =====
-   const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     if (mobileMenuButton && mobileMenu) {
         mobileMenuButton.addEventListener('click', () => {
