@@ -646,7 +646,7 @@ body.dark .icon-label {
 
 /* --- PROJECTS --- */
 .projects-section { 
-    background:#f4e0ff; 
+    background:#eadfef; 
 } 
 body.dark .projects-section { 
     background:#18181b; 
@@ -728,7 +728,7 @@ body.dark .project-link:hover {
 
 /* --- RESUME --- */
 .resume-section { 
-    background: #e9d8fd;
+    background:#eadfef; 
     /* background:#fff;  */
 } 
 body.dark .resume-section { 
@@ -898,7 +898,7 @@ body.dark .resume-edu-year {
 }
 
 /* --- CONTACT --- */
-.contact-section { background:#faf9fb; } body.dark .contact-section { background:#18181b; }
+.contact-section { background:#eadfef;  } body.dark .contact-section { background:#18181b; }
 .contact-container { max-width:900px; margin:0 auto; padding:0 24px; }
 .contact-flex { display:flex; flex-direction:row; gap:48px; align-items:flex-start; }
 @media (max-width:900px) { .contact-flex { flex-direction:column; gap:24px; } }
