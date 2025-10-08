@@ -330,12 +330,12 @@ body.dark .section {
  }
 .section-desc {
   margin-top:16px;
-   text-align:center;
-    font-size:1.1rem; 
-    color:#443751;
-    max-width:700px;
-   margin-left:auto;
-    margin-right:auto;
+  text-align:center;
+  font-size:1.1rem; 
+  color:#443751;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
 }
 body.dark .section-desc { 
     color:#d6d1db;
@@ -348,13 +348,13 @@ body.dark .section-desc {
 /* Buttons */
 .btn { 
     display:inline-block;
-     padding:12px 32px;
-      border-radius:8px;
-       font-size:1rem; 
-       border:none; 
-       cursor:pointer;
-        transition:background .3s, color .3s; 
-        text-decoration:none; 
+    padding:12px 32px;
+    border-radius:8px;
+    font-size:1rem; 
+    border:none; 
+    cursor:pointer;
+    transition:background .3s, color .3s; 
+    text-decoration:none; 
     }
 .btn-primary {
      background:#8525eb;
@@ -646,7 +646,9 @@ body.dark .icon-label {
 
 /* --- PROJECTS --- */
 .projects-section { 
-    background:#eadfef; 
+     background: linear-gradient(135deg, #eddef8 0%, #f3e8ff 100%);
+    /* background:#eadfef;  */
+    /* background-image:url('other bg.jpg');  */
 } 
 body.dark .projects-section { 
     background:#18181b; 
@@ -728,8 +730,9 @@ body.dark .project-link:hover {
 
 /* --- RESUME --- */
 .resume-section { 
-    background:#eadfef; 
-    /* background:#fff;  */
+    /* background-image:url('other bg.jpg'); */
+   /* background:#eadfef;  */
+    background: linear-gradient(135deg, #eddef8 0%, #f3e8ff 100%);
 } 
 body.dark .resume-section { 
     background:#23272f; 
@@ -898,7 +901,7 @@ body.dark .resume-edu-year {
 }
 
 /* --- CONTACT --- */
-.contact-section { background:#eadfef;  } body.dark .contact-section { background:#18181b; }
+.contact-section { background:#faf9fb; } body.dark .contact-section { background:#18181b; }
 .contact-container { max-width:900px; margin:0 auto; padding:0 24px; }
 .contact-flex { display:flex; flex-direction:row; gap:48px; align-items:flex-start; }
 @media (max-width:900px) { .contact-flex { flex-direction:column; gap:24px; } }
@@ -982,8 +985,9 @@ body.dark .form-error {
 }
 .resume-section,
 .contact-section {
-    /* background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%); */
-        background:#f2e7fe;;
+     background: linear-gradient(135deg, #eddef8 0%, #f3e8ff 100%);
+        /* background:#f2e7fe; */
+        /* background-image:url('other bg.jpg'); */
 }
 body.dark .resume-section,
 body.dark .contact-section {
